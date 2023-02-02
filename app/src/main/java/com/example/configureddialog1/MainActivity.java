@@ -16,9 +16,36 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
+/**
+ * The type Main activity.
+ */
 public class MainActivity extends AppCompatActivity {
-    Button btn1,btn2,btn3,btn4;
-    AlertDialog.Builder adb1, adb2, adb3;
+    /**
+     * The Btn 1.
+     */
+    Button btn1, /**
+     * The Btn 2.
+     */
+    btn2, /**
+     * The Btn 3.
+     */
+    btn3, /**
+     * The Btn 4.
+     */
+    btn4;
+    /**
+     * The Adb 1.
+     */
+    AlertDialog.Builder adb1, /**
+     * The Adb 2.
+     */
+    adb2, /**
+     * The Adb 3.
+     */
+    adb3;
+    /**
+     * The Lo.
+     */
     ConstraintLayout LO;
 
 
@@ -50,8 +77,21 @@ public class MainActivity extends AppCompatActivity {
         }
         return true;
     }
+
+    /**
+     * The Colors.
+     */
     final  String [] colors = {"Red", "Green", "Blue"};
+    /**
+     * The Color.
+     */
     int  [] color = new int [3];
+
+    /**
+     * Button 1.
+     *
+     * @param view the view
+     */
     public void button1(View view) {
         color = new int[]{0, 0, 0};
         adb1 = new AlertDialog.Builder(this);
@@ -80,6 +120,11 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
+    /**
+     * Button 2.
+     *
+     * @param view the view
+     */
     public void button2(View view) {
         color = new int[]{0, 0, 0};
         adb2 = new AlertDialog.Builder(this);
@@ -117,10 +162,20 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
+    /**
+     * Button 3.
+     *
+     * @param view the view
+     */
     public void button3(View view) {
         LO.setBackgroundColor(Color.WHITE);
     }
 
+    /**
+     * Button 4.
+     *
+     * @param view the view
+     */
     public void button4(View view) {
         adb3 = new AlertDialog.Builder(this);
         adb3.setCancelable(false);
